@@ -1,0 +1,72 @@
+/* Write your CSS here */
+.mango-image {
+  height: 300px;
+  width: 350px;
+}
+.banana-image {
+  height: 300px;
+  width: 350px;
+}
+.fruits-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-between;
+}
+.mango-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banana-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-container {
+  background-color: #ffd569;
+  background-size: cover;
+  border: 60px #ffd569 solid;
+
+  height: 100vh;
+}
+.heading-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 20px #ffffff solid;
+  border-radius: 15px;
+  height: 90vh;
+}
+.heading {
+  text-align: center;
+}
+.banana-button {
+  height: 40px;
+  width: 130px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  font-size: 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.span {
+  color: #ffd569;
+}
+@media screen and (max-width: 575px) {
+  .fruits-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+  }
+  .bg-container {
+    width: 80%;
+    flex-grow: 1;
+  }
+}
